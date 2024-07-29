@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html id="top" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sigma Cat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/coin_icon.jpg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+</head>
+<body >
+    <div class="custom_nav">
+        <div>
+            <div class="d-inline ms-2">
+                <a href="#top"><img src="./images/coin_icon.jpg" alt="Sigma Cat" style="height: 55px; border-radius: 1.2rem; user-select: none;"></a>
+                <p style="color: rgb(44, 44, 44); font-size: 1.7rem; float: right; font-weight: bold; line-height: 1.05;position: relative; top: 1rem; margin-left: 1rem;">Live on <br><img height="15px" src="./images/solanaLogo.svg"></p>
+            </div>
+        </div>
+        <div class="nav_buttons">
+            <a href="#about">About</a>
+            <a href="#tokenomics">Tokenomics</a>
+            <a href="#memes">Memes</a>
+        </div>
+        <div class="socials">
+            <button><i class="bi bi-telegram"></i></button>
+            <button><i class="bi bi-twitter-x"></i></button>
+            <button><a href="https://pump.fun/AVD5DrJ7p4PAzAt8KHRNc1wLVLHsiBGXNqvjAx9Cpump" target="_blank"><i class="bi bi-graph-up"></i></a></button>
+        </div>
+    </div>
+
+    <div style="margin-top: 12rem !important; width: 100%; position: relative;">
+        
+        <p data-stroke="single" class="title center" data-title="$sigmacat">$sigmacat</p>
+        <img class="center" src="./images/coin_icon.jpg" style="border-radius: 2rem; width: 400px;">
+        <button class="contract center d-block mt-5" title="Click to copy contract" onclick="copy_contract()">
+            <div class="d-flex" style="justify-content: center; align-items: center;">
+                <img src="./images/coin_icon.jpg" style="border-radius: 1rem; height: 30px;">
+                <div class="popup" >CA: 0x25..qG
+                    <span class="popuptext" id="myPopup">Contract Copied!</span>
+                </div>
+        </button>        
+
+        <div id="carousel" style="user-select: none; margin-block: 14rem 0; background-color: black; height: 70px; z-index: 1;">
+            <p class="item"><span>$</span>SIGMACAT</p>
+            <p class="item"><span>$</span>SIGMACAT</p>
+            <p class="item"><span>$</span>SIGMACAT</p>
+            <p class="item"><span>$</span>SIGMACAT</p>
+            <p class="item"><span>$</span>SIGMACAT</p>
+            <p class="item"><span>$</span>SIGMACAT</p>
+            <p class="item"><span>$</span>SIGMACAT</p>
+            <p class="item"><span>$</span>SIGMACAT</p>
+            <p class="item"><span>$</span>SIGMACAT</p>
+            <p class="item"><span>$</span>SIGMACAT</p>
+            <p class="item"><span>$</span>SIGMACAT</p>
+            <p class="item"><span>$</span>SIGMACAT</p>
+            <p class="item"><span>$</span>SIGMACAT</p>
+            <p class="item"><span>$</span>SIGMACAT</p>
+            <p class="item"><span>$</span>SIGMACAT</p>
+            <p class="item"><span>$</span>SIGMACAT</p>
+        </div>
+
+        <div style="background-color: #333;position: relative; padding-bottom: 15rem;" id='about'>
+            <img style="position: absolute; filter: brightness(10); right: -100px; top: -100px;" src="./images/background-offer.png">
+            <div class="sections">
+                <div style="margin-top: 15rem; width: 80%;" class="center"> 
+                    <div class="d-flex justify-content-between mb-4" style="gap:20rem;">
+                        <div>
+                            <p style="font-family: sigma2; font-size: 8rem;color:#EDE7DA ; line-height: 1.2; margin-bottom: 5rem;">The coolest cat on Solana. Trade, laugh, and live like a Sigma!</p>
+                            <a class="join" href="#">Join us!</a>
+                        </div>
+                        <div>
+                            <video style="height: 500px; border-radius: 3rem;" autoplay loop controls>
+                                <source src="./images/banner.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <!-- <img style="height: 200px;" src="./images/coin_icon.jpg"> -->
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 80%;" class="center">
+                    <p id='tokenomics' class="subtitle">TOKENOMICS</p>
+                    <div class="d-flex flex-direction-column justify-content-center center" style="flex-wrap: wrap; column-gap: 9rem; row-gap: 3rem;">
+                        <div class="box">
+                            <div>1</div>
+                            <div>
+                                <p>Total supply</p>
+                                <p>To be updated upon launch on Raydium</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div>2</div>
+                            <div>
+                                <p>Tax</p>
+                                <p>0/0</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div>3</div>
+                            <div>
+                                <p>LP Burned</p>
+                                <p>100%</p>
+                            </div>
+                        </div>
+                        <div class="break"></div> <!-- break -->
+                        <div class="box">
+                            <div>4</div>
+                            <div>
+                                <p>Contract</p>
+                                <p>To be updated upon launch on Raydium</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 80%;" class="center">
+                    <p id='memes' class="subtitle">MEMES</p>
+                    <p style="font-family: sigma; font-size: 6rem; text-align: center; color: #EDE7DA;">Coming soon!</p>
+                </div>
+            </div>
+        
+        </div>
+        <footer>
+            <p>©2024 $SIGMACAT, All Right Reserved.</p>
+        </footer>
+    </div>
+    <!-- <div style="background-color: #b4a393; height: 30rem; width: 100%;"> -->
+
+    <!-- </div> -->
+    
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
